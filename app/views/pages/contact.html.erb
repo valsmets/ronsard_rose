@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+     <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Contact</title>
+
+  </head>
+  <body>
+  <div>
+
+<ul class="nav">
+  <li><%= link_to 'La Rose de Ronsard', pages_home_path %></li>
+  <li><%= link_to 'Bookboxes', pages_bookbox_path %></li>
+  <li><%= link_to 'Contact', pages_contact_path %></li>
+  <li><%= link_to 'La nouvelle Rose', contributions_path %></li>
+</ul></div>
+
+ <div id="article">
+
+            <font color="#7a7a7a">
+  <H1>Contact</H1>
+  For more information, please contact me on:
+  </font><br><br>
+
+
+
+ <a href="mailto:valentine@smets.lu"><%= image_tag 'mail.png', :style => "width: 100px; height:100px; margin-right: 50px;"%></a>
+
+
+
+<a href="https://www.facebook.com/valsmets?fref=ts"><%= image_tag 'face.png', :style => "width: 80px; height:80px; margin-right: 80px;"%></a>
+
+
+
+<a href="https://www.instagram.com/val_smets/  "><%= image_tag 'insta.png', :style => "width: 80px; height:80px"%></a>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+            </div>
+
+
+
+
+ <div class="footer">
+ Valentine Smets
+ </div>
+ </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

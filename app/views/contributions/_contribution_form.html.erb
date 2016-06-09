@@ -1,0 +1,8 @@
+<%= simple_form_for(@contribution) do |f| %>
+  <%= f.error_notification %>
+
+  <%= f.input :name, label: 'Prénom' %>
+  <%= f.input :strophe, as: :text %>
+
+  <%= f.button :submit %>
+<% end %>

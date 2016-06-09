@@ -1,0 +1,116 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+.nav {
+  margin: 30px ;
+  margin-right: 10px;
+  padding: 0 ;
+  list-style: none ;
+  text-align: right ;
+}
+.nav li {
+  display: inline ;
+  margin-right: 1px ;
+}
+.nav li a {
+    padding: 4px 5px ;
+  background: white ;
+  color: #595959 ;
+  font-size: 14px;
+  font-family:  " Helvetica Neue",Arial,sans-serif ;
+  line-height: 1em ;
+  text-align: center ;
+  text-decoration: none ;
+}
+
+.nav li a:hover, .nav li a:focus, .navigation li a:active {
+  text-decoration: none ;
+  background: #e8e8e8;
+  transition:ba 0.25s;
+}
+
+
+#article {;
+  text-align: left;
+  font-size: 13px;
+  margin-top: 10px;
+  margin-left: 30%;
+  margin-right: 20%;
+  margin-bottom:0px;
+  padding-top: 20px;
+
+
+ }
+
+
+
+h1 {
+    margin-bottom: 40px;
+  color:#2A2A2A;
+  font-size:26px;
+  line-height:25px;
+  font-weight:500;
+}
+
+
+
+
+
+.footer {
+
+  background-color: #dbdbdb;
+  position: absolute;
+    clear: both;
+    display: table-row;
+    height: 20px;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+body {
+    display: table;
+    font: 12px/20px "Helvetica Neue","Arial","Helvetica",sans-serif;
+    left: 0;
+    margin: 0;
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+}
+* {
+    box-sizing: border-box;
+
+}
+img {display: inline;}
+
+
+li {
+  list-style-type: none;
+}
+
+
+
+/*
+#site{
+  width: 1000px;
+  margin: auto;
+  background color: transparent;
+}/*
+

@@ -1,0 +1,74 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <title>La Rose de Ronsard</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    </head>
+    <body>
+
+        <ul class="nav">
+          <li><%= link_to 'La Rose de Ronsard', pages_home_path %></li>
+          <li><%= link_to 'Bookboxes', pages_bookbox_path %></li>
+          <li><%= link_to 'Contact', pages_contact_path %></li>
+          <li><%= link_to 'La nouvelle Rose', contributions_path %></li>
+        </ul></div>
+
+
+        <div id="article">
+           <h1>Mignonne, allons voir si la rose</h1>
+           <br>
+           <p class="last">
+            A Cassandre
+            <br>
+            <br>
+            Mignonne, allons voir si la rose<br>Qui ce matin avoit desclose<br>
+            ...
+            <br>
+            <br>
+
+            <% @contributions.each do |c| %>
+            <ul>
+             <i class="fa fa-quote-right" style="color:black;" aria-hidden="true"></i>
+             <li font face= 12px/20px "Helvetica Neue", "Arial", "Helvetica"> <%= c.strophe %> </li>
+             <li font face= 12px/20px "Helvetica Neue", "Arial", "Helvetica"><strong> <%= c.name %> </strong></li>
+           </ul>
+
+           <%= link_to "delete", contribution_path(c.id), method: :delete %>
+
+           <% end %>
+           <br>
+           <br>
+           <p font face= 12px/20px "Helvetica Neue", "Arial", "Helvetica">
+             <strong> Le Poème vit et vivra grâce à vous,<br> n'hésitez pas à rajouter une ligne ou une strophe :</strong>   <br><br> <%= link_to 'Ajouter une strophe', new_contribution_path %> <br><br>
+           </p>
+
+           <br>
+
+        </div>
+
+
+       <div class="footer">
+        Valentine Smets
+      </div>
+
+
+
+    </body>
+    </html>
